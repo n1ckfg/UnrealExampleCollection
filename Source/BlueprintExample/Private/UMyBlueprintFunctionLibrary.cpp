@@ -3,7 +3,7 @@
 // https://answers.unrealengine.com/questions/200241/generate-visual-studio-project-files-did-not-auto.html
 // https://wiki.unrealengine.com/File_Management,_Create_Folders,_Delete_Files,_and_More
 
-#include "MyBlueprintFunctionLibrary.h"
+#include "UMyBlueprintFunctionLibrary.h"
 
 // Message
 FString  UMyBlueprintFunctionLibrary::GetHappyMessage()

@@ -4,7 +4,7 @@
 
 #include "Core.h" // can use Core.h or CoreMinimal.h
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "MyBlueprintFunctionLibrary.generated.h"
+#include "UMyBlueprintFunctionLibrary.generated.h"
 
 /**
  * 
