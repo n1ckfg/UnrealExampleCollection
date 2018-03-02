@@ -13,8 +13,5 @@ UCLASS()
 class BLUEPRINTEXAMPLE_API ABlueprintExampleGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
-	
-	
-	
+
 };
