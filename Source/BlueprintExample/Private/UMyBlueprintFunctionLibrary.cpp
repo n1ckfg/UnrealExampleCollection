@@ -5,7 +5,6 @@
 
 #include "UMyBlueprintFunctionLibrary.h"
 
-// Message
 FString  UMyBlueprintFunctionLibrary::GetHappyMessage()
 {
 	return FString("Victory! BP Library works!");
@@ -15,31 +14,28 @@ bool  UMyBlueprintFunctionLibrary::SaveStringTextToFile(FString SaveDirectory, F
 {
 	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
 
-	// Directory exists?
+	// Check if directory exists.
 	if (!PlatformFile.DirectoryExists(*SaveDirectory))
 	{
-		// Create directory if it doesn't exist.
+		// Create the directory if it doesn't exist.
 		PlatformFile.CreateDirectory(*SaveDirectory);
 
-		// Still couldn't make directory?
+		// Could not make the directory.
 		if (!PlatformFile.DirectoryExists(*SaveDirectory))
 		{
-			// Could not make the specified directory.
 			return false;
 		}
 	}
 
 	// Get complete file path
-	SaveDirectory += "\\";
-	SaveDirectory += FileName;
+	SaveDirectory += "\\" + FileName;
 
-	// no overwriting?
+	// Check if overwriting is allowed.
 	if (!AllowOverWriting)
 	{
-		// Check if file exists already
+		// Check if the file exists already.
 		if (PlatformFile.FileExists(*SaveDirectory))
 		{
-			// no overwriting
 			return false;
 		}
 	}
