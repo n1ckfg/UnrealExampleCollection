@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// https://answers.unrealengine.com/questions/70019/how-to-include-the-header-file-from-a-plugin.html
 
 namespace UnrealBuildTool.Rules
 {
@@ -8,7 +8,8 @@ namespace UnrealBuildTool.Rules
 		{
 			PublicIncludePaths.AddRange(
 				new string[] {
-                    "MyBlueprintPlugin/Public"
+					"MyBlueprintPlugin/Public", 
+					"MyBlueprintPlugin/Classes"
 					// ... add public include paths required here ...
 				}
                 );
@@ -23,7 +24,10 @@ namespace UnrealBuildTool.Rules
 			PublicDependencyModuleNames.AddRange(
 				new string[]
 				{
-					"Core"
+					"Core", 
+					"CoreUObject", 
+					"Engine", 
+					"InputCore"
 					// ... add other public dependencies that you statically link with here ...
 				}
 				);
