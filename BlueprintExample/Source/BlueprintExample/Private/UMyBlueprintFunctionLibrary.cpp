@@ -6,12 +6,12 @@
 
 #include "UMyBlueprintFunctionLibrary.h"
 
-FString  UMyBlueprintFunctionLibrary::GetHappyMessage() 
+FString UMyBlueprintFunctionLibrary::GetHappyMessage() 
 {
 	return FString("Victory! BP Library works!");
 }
 
-bool  UMyBlueprintFunctionLibrary::SaveStringTextToFile(FString SaveDirectory, FString FileName, FString SaveText, bool AllowOverWriting) 
+bool UMyBlueprintFunctionLibrary::SaveStringTextToFile(FString SaveDirectory, FString FileName, FString SaveText, bool AllowOverWriting) 
 {
 	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
 

@@ -1,25 +1,23 @@
 {
-	"FileVersion" : 3,
-	"Version" : 1,
-	"VersionName" : "1.0",
-	"FriendlyName" : "MyBlueprintPlugin",
-	"Description" : "An example of a minimal plugin.  This can be used as a starting point when creating your own plugin.",
-	"Category" : "Examples",
-	"CreatedBy" : "Epic Games, Inc.",
-	"CreatedByURL" : "http://epicgames.com",
-	"DocsURL" : "",
-	"MarketplaceURL" : "",
-	"SupportURL" : "",
-	"EnabledByDefault" : false,
-	"CanContainContent" : false,
-	"IsBetaVersion" : false,
-	"Installed" : false,
-	"Modules" :
-	[
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "MyBlueprintPlugin",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
 		{
-			"Name" : "MyBlueprintPlugin",
-			"Type" : "Runtime",
-			"LoadingPhase" : "Default"
+			"Name": "MyBlueprintPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen"
 		}
 	]
 }

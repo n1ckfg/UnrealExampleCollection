@@ -1,50 +1,59 @@
-// https://answers.unrealengine.com/questions/70019/how-to-include-the-header-file-from-a-plugin.html
+// Some copyright should be here...
 
-namespace UnrealBuildTool.Rules
+using UnrealBuildTool;
+
+public class MyBlueprintPlugin : ModuleRules
 {
-	public class MyBlueprintPlugin : ModuleRules
+	public MyBlueprintPlugin(ReadOnlyTargetRules Target) : base(Target)
 	{
-		public MyBlueprintPlugin(ReadOnlyTargetRules Target) : base(Target)
-		{
-			PublicIncludePaths.AddRange(
-				new string[] {
-					"MyBlueprintPlugin/Public", 
-					"MyBlueprintPlugin/Classes"
-					// ... add public include paths required here ...
-				}
-                );
+		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		
+		PublicIncludePaths.AddRange(
+			new string[] {
+				"MyBlueprintPlugin/Public"
+				
+				// ... add public include paths required here ...
+			}
+			);
+				
+		
+		PrivateIncludePaths.AddRange(
+			new string[] {
+				"MyBlueprintPlugin/Private",
+				
+				// ... add other private include paths required here ...
+			}
+			);
+			
+		
+		PublicDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"Core",
+				
+				// ... add other public dependencies that you statically link with here ...
+			}
+			);
+			
+		
+		PrivateDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore",
 
-			PrivateIncludePaths.AddRange(
-				new string[] {
-					"MyBlueprintPlugin/Private"
-					// ... add other private include paths required here ...
-				}
-				);
-
-			PublicDependencyModuleNames.AddRange(
-				new string[]
-				{
-					"Core", 
-					"CoreUObject", 
-					"Engine", 
-					"InputCore"
-					// ... add other public dependencies that you statically link with here ...
-				}
-				);
-
-			PrivateDependencyModuleNames.AddRange(
-				new string[]
-				{
-					// ... add private dependencies that you statically link with here ...
-				}
-				);
-
-			DynamicallyLoadedModuleNames.AddRange(
-				new string[]
-				{
-					// ... add any modules that your module loads dynamically here ...
-				}
-				);
-		}
+				// ... add private dependencies that you statically link with here ...	
+			}
+			);
+		
+		
+		DynamicallyLoadedModuleNames.AddRange(
+			new string[]
+			{
+				// ... add any modules that your module loads dynamically here ...
+			}
+			);
 	}
 }
