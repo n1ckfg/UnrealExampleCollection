@@ -29,4 +29,12 @@ class UMyBlueprintPluginBPLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "MyBlueprintPlugin sample test testing"), Category = "MyBlueprintPluginTesting")
 	static float MyBlueprintPluginSampleFunction(float Param);
+
+	// Just prints a string.
+	UFUNCTION(BlueprintCallable, Category = "MyBlueprintFunctionLibrary")
+	static FString GetHappyMessage();
+
+	// Saves text input to a file.
+	UFUNCTION(BlueprintCallable, Category = "MyBlueprintFunctionLibrary")
+	static bool SaveStringTextToFile(FString SaveDirectory, FString FileName, FString SaveText, bool AllowOverWriting = false);
 };
