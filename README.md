@@ -1,5 +1,5 @@
 **1. BlueprintExample**<br>
-A Blueprint class with two example methods: one generates a text message, and the other writes text to a file.
+An updated implementation of @EverNewJoy's <a href="https://wiki.unrealengine.com/Blueprint_Function_Library,_Create_Your_Own_to_Share_With_Others">C++ Blueprint tutorial</a>: a Blueprint class that generates a text message and writes text to a file.
 
 **2. PluginExample**<br>
 The same functionality wrapped in a plugin, which is a bit more complex but can be easily moved between projects.
