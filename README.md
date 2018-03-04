@@ -3,3 +3,6 @@ An updated implementation of @EverNewJoy's <a href="https://wiki.unrealengine.co
 
 **2. PluginExample**<br>
 The same functionality wrapped in a plugin, which is a bit more complex but can be easily moved between projects.
+
+**3. HLSL_Unreal**<br>
+Using a text fragment shader inside the Material Editor GUI.
