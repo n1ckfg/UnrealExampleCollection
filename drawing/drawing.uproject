@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.17",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "drawing",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
