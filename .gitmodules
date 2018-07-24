@@ -1,0 +1,12 @@
+[submodule "PluginExample"]
+	path = PluginExample
+	url = https://github.com/n1ckfg/PluginExample
+[submodule "BlueprintExample"]
+	path = BlueprintExample
+	url = https://github.com/n1ckfg/BlueprintExample
+[submodule "drawing_methods"]
+	path = drawing_methods
+	url = https://github.com/n1ckfg/drawing_methods
+[submodule "HLSL_Unreal"]
+	path = HLSL_Unreal
+	url = https://github.com/n1ckfg/HLSL_Unreal
