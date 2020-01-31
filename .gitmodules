@@ -10,3 +10,24 @@
 [submodule "HLSL_Unreal"]
 	path = HLSL_Unreal
 	url = https://github.com/n1ckfg/HLSL_Unreal
+[submodule "DepthImage_UE4"]
+	path = DepthImage_UE4
+	url = https://github.com/n1ckfg/DepthImage_UE4
+[submodule "LidarSim_UE4"]
+	path = LidarSim_UE4
+	url = https://github.com/n1ckfg/LidarSim_UE4
+[submodule "ProceduralMesh_UE4"]
+	path = ProceduralMesh_UE4
+	url = https://github.com/n1ckfg/ProceduralMesh_UE4
+[submodule "LineRenderer_UE4"]
+	path = LineRenderer_UE4
+	url = https://github.com/n1ckfg/LineRenderer_UE4
+[submodule "PixelAccess_UE4"]
+	path = PixelAccess_UE4
+	url = https://github.com/n1ckfg/PixelAccess_UE4
+[submodule "StreetMap_UE4"]
+	path = StreetMap_UE4
+	url = https://github.com/n1ckfg/StreetMap_UE4
+[submodule "JSONQuery_UE4"]
+	path = JSONQuery_UE4
+	url = https://github.com/n1ckfg/JSONQuery_UE4
